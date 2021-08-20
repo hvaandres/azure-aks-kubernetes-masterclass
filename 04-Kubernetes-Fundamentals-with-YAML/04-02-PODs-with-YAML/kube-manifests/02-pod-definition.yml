@@ -1,15 +1,21 @@
-apiVersion: v1 # String
-kind: Pod # String
-metadata: # Dictionary
-  name: myapp-pod
-  labels: # Dictionary
-    app: myapp  # Key value paids
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aharo-pod-001
+  labels:
+    app: myapp
 spec:
-  containers: # List
+  containers: #list
     - name: myapp
       image: stacksimplify/kubenginx:1.0.0
-      ports: 
+      ports:
         - containerPort: 80
 
-
     
+# Types of Kubernetes Objects
+# Pod, ReplicaSet, Deployment, Service and many more
+
+# apiVersion: version of k8s objects
+# kind: k8s objects 
+# metadata: define name and labels for k8s objects
+# spec: specification or real definition for k8s objects
