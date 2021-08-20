@@ -1,4 +1,3 @@
-# Simple Key value Pairs
 person: # Dictionary
   name: kalyan
   age: 23
@@ -6,12 +5,14 @@ person: # Dictionary
   hobbies: # List
     - cooking
     - cycling
-  friends: # Multiple lists
-    - name: friend1
-      age: 23
-    - name: friend2
-      age: 22
---- # YAML Document Separator
+  computers: # Multiple List 
+    - brand: Apple
+      inch: 24
+    - brand: Dell
+      inch: 20
+
+--- # YAML Seperator
+ 
 apiVersion: v1 # String
 kind: Pod  # String
 metadata: # Dictionary
@@ -28,8 +29,4 @@ spec:
           protocol: "TCP"
         - containerPort: 81
           protocol: "TCP"  
-
-
-                     
-
   
